@@ -2,7 +2,7 @@
 
 sxhkd &
 
-bspc monitor -d 1 2 3 4 5
+bspc monitor -d 1 2 3 4 5 6 7 8
 
 bspc config border_width        1
 bspc config window_gap          8
@@ -24,4 +24,4 @@ bspc config single_monocle 		true
 #sh .screenlayout/default.sh &
 feh --bg-fill ~/Pictures/building.jpg &
 xsetroot -cursor_name left_ptr &
-polybar top &
+polybar &

@@ -5,7 +5,7 @@ super + Return
 
 #Rofi
 super + space
-    rofi -show run -matching fuzzy -font "terminus 12" -padding 580 -width 1600 -lines 6 -click-to-exit rofi -color-normal "#151513,#EEF6F6,#151513,#151513,#478061"  -color-window "#151513,#151513,#151513" -hide-scrollbar
+    rofi -show drun -font "terminus 12"
 
 ##Reload config
 super + r
@@ -27,7 +27,7 @@ super + m
 
 #Window state
 super + {t,shift + t,s,f}
-    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+    bspc node -t {tiled,pseudo_tiled,floating,~fullscreen}
 
 ########## DESKTOPS ##########
 # switch to desktop 1-10
