@@ -1,0 +1,80 @@
+##Programs
+#Terminal
+super + Return
+    ghostty
+
+#Rofi
+super + space
+    rofi -show run -matching fuzzy -font "terminus 12" -padding 580 -width 1600 -lines 6 -click-to-exit rofi -color-normal "#151513,#EEF6F6,#151513,#151513,#478061"  -color-window "#151513,#151513,#151513" -hide-scrollbar
+
+##Reload config
+super + r
+    pkill -USR1 -x sxhkd
+
+##Window control
+#Quit BSPWM
+super + Escape
+    bspc quit
+
+#Close and kill 
+super + {_,shift + }q
+    bspc node -{c,k}
+
+##Focus
+#Tiled/Monocle
+super + m
+    bspc desktop -l next
+
+#Window state
+super + {t,shift + t,s,f}
+    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+########## DESKTOPS ##########
+# switch to desktop 1-10
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
+
+# send window to desktop 1-10
+super + ctrl + {1-9,0}
+	bspc node -d '^{1-9,10}'
+
+########## FOCUS ##########
+# focus next/prend window (on current desktop)
+super + {Down,Up}
+	bspc node -f next.local
+super + Up
+	bspc node -f prev.local
+
+########## DESKTOP CYCLE ##########
+# go to prev/next desktop
+super + Left
+	bspc desktop -f prev
+super + Right
+	bspc desktop -f next
+
+########## MOVE WINDOW ALONG DESKTOPS ##########
+# send window to previous / next desktop
+super + ctrl + Left
+	bspc node -d prev
+super + ctrl + Right
+	bspc node -d next
+
+########## RESIZE (tiled windows) ##########
+# expand border by 20 px
+super + shift + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+########## MEDIA (XF86 hardware keys) ##########
+# brightness
+XF86MonBrightnessDown
+	brightnessctl set 5%-
+XF86MonBrightnessUp
+	brightnessctl set 5%+
+
+# volume
+XF86AudioLowerVolume
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+XF86AudioRaiseVolume
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+XF86AudioMute
+	wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
