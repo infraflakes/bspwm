@@ -3,7 +3,7 @@
 Prerequisites:
 
 ```
-bspwm sxhkd xsel xorg-xsetroot feh polybar terminus-font rofi
+bspwm sxhkd xsel feh polybar terminus-font terminess-nerd rofi brightnessctil
 ```
 
 ```bash
