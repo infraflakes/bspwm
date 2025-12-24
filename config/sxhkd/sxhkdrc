@@ -16,6 +16,10 @@ super + r
 super + Escape
     bspc quit
 
+#Pin window
+super + s
+    bspc window -t sticky
+
 #Close and kill 
 super + {_,shift + }q
     bspc node -{c,k}
@@ -26,8 +30,8 @@ super + m
     bspc desktop -l next
 
 #Window state
-super + {t,shift + t,s,f}
-    bspc node -t {tiled,pseudo_tiled,floating,~fullscreen}
+super + {t,shift + t,w,f}
+    bspc node -t {~tiled,~pseudo_tiled,~floating,~fullscreen}
 
 ########## DESKTOPS ##########
 # switch to desktop 1-10
