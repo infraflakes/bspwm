@@ -22,6 +22,6 @@ bspc config center_pseudo_tiled 	false
 bspc config single_monocle 		true
 
 #sh .screenlayout/default.sh &
-feh --bg-fill --no-fehbg ~/Pictures/building.jpg
+feh --bg-fill --no-fehbg ~/.config/wallpaper/building.jpg
 xsetroot -cursor_name left_ptr &
 polybar &
