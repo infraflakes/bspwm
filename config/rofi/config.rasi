@@ -1,0 +1,16 @@
+@theme "DarkBlue.rasi"
+
+* { // Global settings, can override defaults
+    background-color: #222;
+    text-color: #fff;
+    font: "Terminess Nerd Font 24";
+}
+
+/* Custom element styles */
+mode-switcher {
+    enabled: false;
+}
+window {
+    width: 45%;        /* Percentage of your screen width */
+    height: 45%;        /* Percentage of your screen width */
+}

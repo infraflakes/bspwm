@@ -3,11 +3,17 @@
 Prerequisites:
 
 ```
-bspwm sxhkd xsel feh polybar terminus-font terminess-nerd rofi brightnessctil
+bspwm sxhkd xsel feh polybar terminus-font terminess-nerd rofi brightnessctil scrot
 ```
 
+Put these in .config (I personally use stow):
 ```bash
-cp -r config/* .config
+stow -t ~/.config config
+```
+
+Xorg touchpad config:
+
+```
 sudo cp -r etc/X11/xorg.conf.d/* /etc/X11/xorg.conf.d
 ```
 
