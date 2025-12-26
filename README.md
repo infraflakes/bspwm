@@ -3,7 +3,7 @@
 Prerequisites:
 
 ```
-bspwm sxhkd xsel feh polybar terminus-font terminess-nerd rofi brightnessctil scrot
+bspwm sxhkd xsel feh polybar terminus-font terminess-nerd-font rofi brightnessctil scrot slock
 ```
 
 Put these in .config (I personally use stow):
