@@ -19,7 +19,6 @@ bspc config focused_border_color    '#f0f0f0'
 bspc config center_pseudo_tiled 	false
 bspc config single_monocle 		true
 
-pipewire &
 feh --bg-fill --no-fehbg ~/.config/wallpaper/building.jpg
 xsetroot -cursor_name left_ptr &
 polybar &
