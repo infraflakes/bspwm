@@ -38,8 +38,8 @@ super + m
     bspc desktop -l next
 
 #Window state
-super + {t,shift + t,w,f}
-    bspc node -t {~tiled,~pseudo_tiled,~floating,~fullscreen}
+super + {w,f}
+    bspc node -t {~floating,~fullscreen}
 
 ########## DESKTOPS ##########
 # switch to desktop 1-10
