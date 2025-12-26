@@ -23,4 +23,5 @@ pipewire &
 feh --bg-fill --no-fehbg ~/.config/wallpaper/building.jpg
 xsetroot -cursor_name left_ptr &
 polybar &
+fcitx5 &
 mpd ~/.config/mpd/mpd.conf &

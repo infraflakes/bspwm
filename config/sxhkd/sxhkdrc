@@ -5,7 +5,7 @@ super + Return
 
 #Screenshot
 super + shift + s
-    scrot -s ~/Pictures/%Y-%m-%d-%s.png
+    scrot -s ~/Pictures/Screenshots/%Y-%m-%d-%s.png
 
 #Launcher
 super + space
